@@ -296,3 +296,8 @@ controls.click = func {
 _setlistener("/sim/signals/fdm-initialized", func {
 	setprop("/instrumentation/groundradar/id", getprop("/sim/airport/closest-airport-id"));
 });
+
+setlistener("/sim/signals/fdm-initialized", func {	
+  	itaf.ap_init();			
+	var autopilot = gui.Dialog.new("sim/gui/dialogs/autopilot/dialog", "Aircraft/747-400/Systems/autopilot-dlg.xml");
+});

@@ -131,7 +131,7 @@
 <animation>
 	<type>rotate</type>
 	<object-name>dis.vertspd.1</object-name>
-	<property>autopilot/settings/vertical-speed-fpm</property>
+	<property>it-autoflight/settings/vertical-speed-fpm</property>
 	<interpolation>
 		<entry><ind>-1000</ind><dep>-33</dep></entry>
 		<entry><ind>-1</ind><dep>-33</dep></entry>
@@ -151,7 +151,7 @@
 <animation>
 	<type>textranslate</type>
 	<object-name>dis.vertspd.2</object-name>
-	<property>autopilot/settings/vertical-speed-fpm</property>
+	<property>it-autoflight/settings/vertical-speed-fpm</property>
 	<factor>0.0001</factor>
 	<step>1000</step>
 	<axis>
@@ -164,7 +164,7 @@
 <animation>
 	<type>textranslate</type>
 	<object-name>dis.vertspd.3</object-name>
-	<property>autopilot/settings/vertical-speed-fpm</property>
+	<property>it-autoflight/settings/vertical-speed-fpm</property>
 	<factor>0.001</factor>
 	<step>100</step>
 	<axis>
@@ -177,7 +177,7 @@
 <animation>
 	<type>textranslate</type>
 	<object-name>dis.vertspd.4</object-name>
-	<property>autopilot/settings/vertical-speed-fpm</property>
+	<property>it-autoflight/settings/vertical-speed-fpm</property>
 	<factor>0.01</factor>
 	<step>10</step>
 	<axis>
@@ -190,7 +190,7 @@
 <animation>
 	<type>textranslate</type>
 	<object-name>dis.vertspd.5</object-name>
-	<property>autopilot/settings/vertical-speed-fpm</property>
+	<property>it-autoflight/settings/vertical-speed-fpm</property>
 	<factor>0.1</factor>
 	<step>1</step>
 	<axis>
@@ -249,7 +249,7 @@
 	<object-name>lt.althold</object-name>
 	<condition>
 		<equals>
-			<property>/autopilot/locks/altitude</property>
+			<property>/it-autoflight/locks/altitude</property>
 			<value>altitude-hold</value>
 		</equals>
 	</condition>
@@ -263,7 +263,7 @@
 		<repeatable>false</repeatable>
 		<binding>
 			<command>property-cycle</command>
-			<property>/autopilot/locks/altitude</property>
+			<property>/it-autoflight/locks/altitude</property>
 			<value type="string">altitude-hold</value>
 			<value type="string"></value>
 		</binding>
@@ -276,7 +276,7 @@
 	<action> 
 		<binding>
 			<command>property-adjust</command>
-			<property>/autopilot/settings/bank-limit</property>
+			<property>/it-autoflight/settings/bank-limit</property>
 			<factor>5</factor>
 			<min>0</min>
 			<max>30</max>
@@ -289,7 +289,7 @@
 	<object-name>lt.flch</object-name>
 	<condition>
 		<equals>
-			<property>/autopilot/locks/speed</property>
+			<property>/it-autoflight/locks/speed</property>
 			<value>speed-with-pitch-trim</value>
 		</equals>
 	</condition>
@@ -303,7 +303,7 @@
 		<repeatable>false</repeatable>  
 		<binding>
 			<command>property-toggle</command>
-			<property>sim/gui/dialogs/autopilot/speed-with-pitch-trim</property>
+			<property>sim/gui/dialogs/it-autoflight/speed-with-pitch-trim</property>
 		</binding>
 	</action>
 </animation>
@@ -313,7 +313,7 @@
      <object-name>lt.hdghold</object-name>
      <condition>
 		<equals>
-			<property>/autopilot/locks/heading</property>
+			<property>/it-autoflight/locks/heading</property>
 			<value>wing-leveler</value>
 		</equals>
      </condition>
@@ -327,7 +327,7 @@
 		<repeatable>false</repeatable>  
  		<binding>
 			<command>property-cycle</command>
-			<property>/autopilot/locks/heading/</property>
+			<property>/it-autoflight/locks/heading/</property>
 			<value type="string">wing-leveler</value>
 			<value type="string"></value>
  		</binding>
@@ -342,7 +342,7 @@
 		<repeatable>false</repeatable>  
 		<binding>
 			<command>property-cycle</command>
-			<property>/autopilot/locks/heading</property>
+			<property>/it-autoflight/locks/heading</property>
 			<value type="string">dg-heading-hold</value>
 			<value type="string"></value>
 		</binding>
@@ -355,7 +355,7 @@
 	<action> 
 		<binding>
 			<command>property-adjust</command>
-			<property>/autopilot/settings/heading-bug-deg</property>
+			<property>/it-autoflight/settings/heading-bug-deg</property>
 			<factor>1</factor>
 			<min>000</min>
 			<max>360</max>
@@ -367,7 +367,7 @@
 <animation>
 	<type>textranslate</type>
 	<object-name>dis.hdg.1</object-name>
-	<property>autopilot/settings/heading-bug-deg</property>
+	<property>it-autoflight/settings/heading-bug-deg</property>
 	<factor>0.001</factor>
 	<step>100</step>
 	<axis>
@@ -380,7 +380,7 @@
 <animation>
 	<type>textranslate</type>
 	<object-name>dis.hdg.2</object-name>
-	<property>autopilot/settings/heading-bug-deg</property>
+	<property>it-autoflight/settings/heading-bug-deg</property>
 	<factor>0.01</factor>
 	<step>10</step>
 	<axis>
@@ -393,7 +393,7 @@
 <animation>
 	<type>textranslate</type>
 	<object-name>dis.hdg.3</object-name>
-	<property>autopilot/settings/heading-bug-deg</property>
+	<property>it-autoflight/settings/heading-bug-deg</property>
 	<factor>0.1</factor>
 	<step>1</step>
 	<axis>
@@ -408,7 +408,7 @@
      <object-name>lt.lnav</object-name>
      <condition>
 		<equals>
-			<property>/autopilot/locks/heading</property>
+			<property>/it-autoflight/locks/heading</property>
 			<value>nav1-hold</value>
 		</equals>
 	</condition>
@@ -422,7 +422,7 @@
 		<repeatable>false</repeatable>  
 		<binding>
 			<command>property-cycle</command>
-			<property>/autopilot/locks/heading</property>
+			<property>/it-autoflight/locks/heading</property>
 			<value type="string">nav1-hold</value>
 			<value type="string"></value>
 		</binding>
@@ -434,7 +434,7 @@
 	<object-name>lt.spd</object-name>
 	<condition>
 		<equals>
-			<property>/autopilot/locks/speed</property>
+			<property>/it-autoflight/locks/speed</property>
 			<value>speed-with-throttle</value>
 		</equals>
 	</condition>
@@ -448,7 +448,7 @@
 		<repeatable>false</repeatable>  
 		<binding>
 			<command>property-cycle</command>
-			<property>/autopilot/locks/speed</property>
+			<property>/it-autoflight/locks/speed</property>
 			<value type="string">speed-with-throttle</value>
 			<value type="string"></value>
 		</binding>
@@ -463,7 +463,7 @@
 		<repeatable>false</repeatable>  
 		<binding>
 			<command>property-cycle</command>
-			<property>/autopilot/settings/speed-select</property>
+			<property>/it-autoflight/settings/speed-select</property>
 			<value type="string">mach</value>
 			<value type="string"></value>
 		</binding>
@@ -471,51 +471,49 @@
 </animation>
 
 <animation>
-	<type>knob</type>
-	<object-name>btn.speed</object-name>
-	<action> 
-		<repeatable>true</repeatable>
-		<binding>
-			<condition>
-				<not>
-					<equals>
-						<property>/autopilot/settings/speed-select</property>
-						<value>mach</value>
-					</equals>
-				</not>
-			</condition>
-			<command>property-adjust</command>
-			<property>/autopilot/settings/target-speed-kt</property>
-			<factor>1</factor>
-			<min>100</min>
-			<max>399</max>
-		</binding>
-		<binding>
-			<condition>
-				<equals>
-					<property>/autopilot/settings/speed-select</property>
-					<value>mach</value>
-				</equals>
-			</condition>
-			<command>property-adjust</command>
-			<property>/autopilot/settings/target-speed-mach</property>
-			<factor>0.01</factor>
-			<min>0.40</min>
-			<max>0.95</max>
-		</binding>
-	</action>
+   <type>knob</type>
+   <object-name>btn.speed</object-name>
+   <action> 
+      <repeatable>true</repeatable>
+      <binding>
+         <condition>
+            <equals>
+               <property>/it-autoflight/apthrmode</property>
+               <value>0</value>
+            </equals>
+         </condition>
+         <command>property-adjust</command>
+         <property>/it-autoflight/settings/target-speed-kt</property>
+         <factor>1</factor>
+         <min>100</min>
+         <max>399</max>
+      </binding>
+      <binding>
+         <condition>
+            <equals>
+               <property>/it-autoflight/apthrmode</property>
+               <value>1</value>
+            </equals>
+         </condition>
+         <command>property-adjust</command>
+         <property>/it-autoflight/settings/target-mach</property>
+         <factor>0.01</factor>
+         <min>0.40</min>
+         <max>0.95</max>
+      </binding>
+   </action>
 </animation>
 
 <animation>
 	<type>textranslate</type>
 	<object-name>dis.spd.1</object-name>
-	<property>autopilot/settings/target-speed-kt</property>
+	<property>it-autoflight/settings/target-speed-kt</property>
 	<factor>0.001</factor>
 	<step>100</step>
 	<condition>
 		<not>
 			<equals>
-				<property>/autopilot/settings/speed-select</property>
+				<property>/it-autoflight/settings/speed-select</property>
 				<value>mach</value>
 			</equals>
 		</not>
@@ -530,13 +528,13 @@
 <animation>
 	<type>textranslate</type>
 	<object-name>dis.spd.2</object-name>
-	<property>autopilot/settings/target-speed-kt</property>
+	<property>it-autoflight/settings/target-speed-kt</property>
 	<factor>0.01</factor>
 	<step>10</step>
 	<condition>
 		<not>
 			<equals>
-				<property>/autopilot/settings/speed-select</property>
+				<property>/it-autoflight/settings/speed-select</property>
 				<value>mach</value>
 			</equals>
 		</not>
@@ -551,13 +549,13 @@
 <animation>
 	<type>textranslate</type>
 	<object-name>dis.spd.3</object-name>
-	<property>autopilot/settings/target-speed-kt</property>
+	<property>it-autoflight/settings/target-speed-kt</property>
 	<factor>0.1</factor>
 	<step>1</step>
 	<condition>
 		<not>
 			<equals>
-				<property>/autopilot/settings/speed-select</property>
+				<property>/it-autoflight/settings/speed-select</property>
 				<value>mach</value>
 			</equals>
 		</not>
@@ -574,7 +572,7 @@
 	<object-name>lt.thr</object-name>
 	<condition>
 		<equals>
-			<property>/autopilot/locks/speed</property>
+			<property>/it-autoflight/locks/speed</property>
 			<value>speed-with-pitch-trim</value>
 		</equals>
 	</condition>
@@ -588,7 +586,7 @@
 		<repeatable>false</repeatable>  
 		<binding>
 			<command>property-cycle</command>
-			<property>/autopilot/locks/speed</property>
+			<property>/it-autoflight/locks/speed</property>
 			<value type="string">speed-with-pitch-trim</value>
 			<value type="string"></value>
 		</binding>
@@ -600,7 +598,7 @@
      <object-name>lt.vnav</object-name>
      <condition>
 		<equals>
-			<property>/autopilot/locks/altitude</property>
+			<property>/it-autoflight/locks/altitude</property>
 			<value>gs1-hold</value>
 		</equals>
 	</condition>
@@ -614,7 +612,7 @@
 		<repeatable>false</repeatable>  
 		<binding>
 			<command>property-cycle</command>
-			<property>/autopilot/locks/altitude</property>
+			<property>/it-autoflight/locks/altitude</property>
 			<value type="string">gs1-hold</value>
 			<value type="string"></value>
 		</binding>
@@ -626,7 +624,7 @@
 	<object-name>lt.vs</object-name>
 	<condition>
 		<equals>
-			<property>/autopilot/locks/altitude</property>
+			<property>/it-autoflight/locks/altitude</property>
 			<value>vertical-speed-hold</value>
 		</equals>
 	</condition>
@@ -640,7 +638,7 @@
 		<repeatable>false</repeatable>
 		<binding>
 			<command>property-cycle</command>
-			<property>/autopilot/locks/altitude</property>
+			<property>/it-autoflight/locks/altitude</property>
 			<value type="string">vertical-speed-hold</value>
 			<value type="string"></value>
 		</binding>
@@ -656,7 +654,7 @@
 		<repeatable>true</repeatable>
 		<binding>
 			<command>property-adjust</command>
-			<property>/autopilot/settings/vertical-speed-fpm</property>
+			<property>/it-autoflight/settings/vertical-speed-fpm</property>
 			<factor>100</factor>
 			<min>-8000</min>
 			<max>6000</max>
@@ -671,7 +669,7 @@
 		<repeatable>true</repeatable>
 		<binding>
 			<command>property-adjust</command>
-			<property>/autopilot/settings/target-altitude-ft</property>
+			<property>/it-autoflight/settings/target-altitude-ft</property>
 			<factor>100</factor>
 			<min>0</min>
 			<max>50000</max>
@@ -682,7 +680,7 @@
 <animation>
 	<type>textranslate</type>
 	<object-name>dis.alt.1</object-name>
-	<property>autopilot/settings/target-altitude-ft</property>
+	<property>it-autoflight/settings/target-altitude-ft</property>
 	<factor>0.00001</factor>
 	<step>10000</step>
 	<axis>
@@ -695,7 +693,7 @@
 <animation>
 	<type>textranslate</type>
 	<object-name>dis.alt.2</object-name>
-	<property>autopilot/settings/target-altitude-ft</property>
+	<property>it-autoflight/settings/target-altitude-ft</property>
 	<factor>0.0001</factor>
 	<step>1000</step>
 	<axis>
@@ -708,7 +706,7 @@
 <animation>
 	<type>textranslate</type>
 	<object-name>dis.alt.3</object-name>
-	<property>autopilot/settings/target-altitude-ft</property>
+	<property>it-autoflight/settings/target-altitude-ft</property>
 	<factor>0.001</factor>
 	<step>100</step>
 	<axis>
@@ -726,7 +724,7 @@
 		<repeatable>false</repeatable>  
 		<binding>
 			<command>property-assign</command>
-			<property>/autopilot/locks/heading</property>
+			<property>/it-autoflight/locks/heading</property>
 			<value>nav1-hold</value>
 		</binding>
 	</action>
@@ -737,7 +735,7 @@
 	<object-name>lt.loc</object-name>
 	<condition>
 		<equals>
-			<property>/autopilot/locks/heading</property>
+			<property>/it-autoflight/locks/heading</property>
 			<value>nav1-hold</value>
 		</equals>
 	</condition>
@@ -756,7 +754,7 @@
 		</binding>
 		<binding>
 			<command>property-assign</command>
-			<property>/autopilot/locks/altitude</property>
+			<property>/it-autoflight/locks/altitude</property>
 			<value>gs1-hold</value>
 		</binding>
 	</action>
@@ -768,11 +766,11 @@
 	<condition>
 		<and>
 			<equals>
-				<property>/autopilot/locks/heading</property>
+				<property>/it-autoflight/locks/heading</property>
 				<value>nav1-hold</value>
 			</equals>
 			<equals>
-				<property>/autopilot/locks/altitude</property>
+				<property>/it-autoflight/locks/altitude</property>
 				<value>gs1-hold</value>
 			</equals>
 		</and>
@@ -787,7 +785,7 @@
 		<repeatable>false</repeatable>  
 		<binding>
 			<command>property-toggle</command>
-			<property>/autopilot/settings/disengaged</property>
+			<property>/it-autoflight/settings/disengaged</property>
 		</binding>
 		<binding>
 			<command>nasal</command>
@@ -805,7 +803,7 @@
 <animation>
 	<type>translate</type>
 	<object-name>btn.ap.disengage</object-name>
-	<property>/autopilot/settings/disengaged</property>
+	<property>/it-autoflight/settings/disengaged</property>
 	<factor>0.012</factor>
 	<axis>
 		<z>-1</z>
@@ -823,7 +821,7 @@
 		<binding>
 			<condition>
 				<not>
-					<property>/autopilot/settings/disengaged</property>
+					<property>/it-autoflight/settings/disengaged</property>
 				</not>
 			</condition>
 			<command>property-assign</command>
@@ -833,7 +831,7 @@
 		<binding>
 			<condition>
 				<not>
-					<property>/autopilot/settings/disengaged</property>
+					<property>/it-autoflight/settings/disengaged</property>
 				</not>
 			</condition>
 			<command>property-assign</command>
@@ -843,7 +841,7 @@
 		<binding>
 			<condition>
 				<not>
-					<property>/autopilot/settings/disengaged</property>
+					<property>/it-autoflight/settings/disengaged</property>
 				</not>
 			</condition>
 			<command>property-assign</command>

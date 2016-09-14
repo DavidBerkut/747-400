@@ -62,8 +62,8 @@
 	
 	<systems>
 		<autopilot>
-			<name>Primary Autopilot</name>
-			<path>Aircraft/747-400/Systems/autopilot.xml</path>
+			<name>IT-AUTOFLIGHT</name>
+			<path>Aircraft/747-400/Systems/it-autoflight.xml</path>
 		</autopilot>
 		<autopilot>
 			<name>Autobrake System</name>
@@ -757,8 +757,6 @@ left mouse button and counter clockwise using the middle mouse button.
 
 <nasal>
 	<Boeing747>
-		<file>Aircraft/747-400/Nasal/autopilot.nas</file>
-		<file>Aircraft/747-400/Nasal/autopilot-routemanager.nas</file>
 		<file>Aircraft/747-400/Nasal/copilot.nas</file>
 		<file>Aircraft/747-400/Nasal/doors.nas</file>
 		<file>Aircraft/747-400/Models/Cockpit/Instruments/EICAS/doors.nas</file>
@@ -785,6 +783,9 @@ left mouse button and counter clockwise using the middle mouse button.
 	<aircraft_dual_control>
 		<file>Aircraft/747-400/DualControl/747-400-dual-control.nas</file>
 	</aircraft_dual_control>
+	<itaf>
+    		<file>Aircraft/747-400/Nasal/it-autoflight.nas</file>
+	</itaf>
 	<dual_control>
 		<file>Aircraft/Generic/DualControl/pilot-dual-control.nas</file>
 	</dual_control>
