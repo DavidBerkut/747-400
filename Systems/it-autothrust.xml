@@ -52,7 +52,7 @@
       <Ti>10.0</Ti>       
       <Td>0.00001</Td>    
       <u_min>0.0</u_min>  
-      <u_max>0.94</u_max>  
+      <u_max>0.84</u_max>  
     </config>
   </pid-controller>
 
@@ -85,11 +85,11 @@
     </enable>
     <input>
       <property>/velocities/mach</property>
-	  <scale>500.0</scale>
+	  <scale>1000.0</scale>
     </input>
     <reference>
       <property>/it-autoflight/settings/target-mach</property>
-	  <scale>500.0</scale>
+	  <scale>1000.0</scale>
     </reference>
     <output>
       <property>/controls/flight/throttle-cmd</property>
@@ -103,7 +103,7 @@
       <Ti>10.0</Ti>       
       <Td>0.00001</Td>    
       <u_min>0.0</u_min>  
-      <u_max>0.94</u_max>  
+      <u_max>0.85</u_max>  
     </config>
   </pid-controller>
   
@@ -191,7 +191,7 @@
       <Ti>10.0</Ti>       
       <Td>0.00001</Td>    
       <u_min>0.0</u_min>  
-      <u_max>0.95</u_max>  
+      <u_max>0.90</u_max>  
     </config>
   </pid-controller>
   
